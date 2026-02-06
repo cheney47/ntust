@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立臺灣科技大學115學年度碩士班招生</title>
+    <style>
+        body {
+            font-family: Arial, "微軟正黑體", sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 頂部標題與導覽列 */
+        .header {
+            background: linear-gradient(to bottom, #4a4a4a, #2b2b2b);
+            color: white;
+            text-align: center;
+            padding: 20px 0 10px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 5px 0;
+            margin-top: 15px;
+        }
+
+        .nav-item {
+            padding: 8px 15px;
+            margin: 0 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 4px;
+            background-color: #666;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item.active {
+            background-color: #cc0000; /* 紅色高亮 */
+        }
+
+        /* 主要內容區 */
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: white;
+            min-height: 500px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* 側邊欄 */
+        .sidebar {
+            width: 200px;
+            border-right: 1px solid #ddd;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .user-name {
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 2px solid #999;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-menu li {
+            padding: 10px 0;
+            border-bottom: 1px dotted #ccc;
+            font-size: 13px;
+            color: #cc0000;
+            cursor: pointer;
+        }
+
+        .sidebar-menu li::before {
+            content: "▪ ";
+        }
+
+        /* 右側主顯示區 */
+        .main-content {
+            flex: 1;
+            padding: 20px 40px;
+        }
+
+        .breadcrumb {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .breadcrumb span {
+            color: #cc0000;
+        }
+
+        .title-banner {
+            color: #cc0000;
+            font-size: 18px;
+            font-weight: bold;
+            border-top: 2px solid #eee;
+            border-bottom: 2px solid #eee;
+            padding: 10px 0;
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .info-row {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .info-row a {
+            color: #cc0000;
+            text-decoration: underline;
+        }
+
+        .download-section {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .download-link {
+            color: #cc0000;
+            text-decoration: underline;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* 頁腳 */
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            background-color: #ddd;
+            padding: 15px 0;
+            border-top: 3px solid #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>國立臺灣科技大學115學年度碩士班招生</h1>
+        <div class="nav-bar">
+            <a href="#" class="nav-item">首頁</a>
+            <a href="#" class="nav-item">報名作業</a>
+            <a href="#" class="nav-item active">考生專區</a>
+            <a href="#" class="nav-item">報到/遞補作業</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="user-name">考生姓名：卿承宇</div>
+            <ul class="sidebar-menu">
+                <li>資料上傳.報名費繳費作業</li>
+                <li>通知訊息</li>
+                <li>修改基本資料</li>
+                <li>列印准考證 / 口試繳費作業</li>
+                <li>複查作業</li>
+                <li>放棄錄取.遞補資格</li>
+                <li>修改通訊資料</li>
+                <li>修改密碼</li>
+                <li>登出</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="breadcrumb">首頁 / <span>考生專區</span> / 報名作業狀態</div>
+            
+            <div class="title-banner">
+                ◀◀◀ 報名狀態查詢及文件下載 ▶▶▶
+            </div>
+
+            <div class="info-row">
+                系所組別：資訊工程系碩士班 <a href="#">(報名資料查詢)</a>
+            </div>
+            <div class="info-row" style="color: blue;">
+                准考證號：515001453
+            </div>
+
+            <div class="download-section">
+                1. 列印准考證： 
+                <a href="your-file-path.pdf" download="准考證.pdf" class="download-link">列印准考證</a>
+                <p style="color: blue; font-size: 14px; margin-top: 5px;">
+                    本校將於115年1月19日(一)起開放考生自行上網至考生專區列印准考證。( 准考證之列印僅表示報名成功 )。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        電話：02-27376112 | 傳真：02-27301027 | E-mail：mengjin@mail.ntust.edu.tw <br>
+        國立臺灣科技大學 碩士班招生 臺北市 106 大安區基隆路 4 段 43 號 <br>
+        本文件所有權均受法律保護
+    </div>
+
+</body>
+</html>
