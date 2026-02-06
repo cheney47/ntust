@@ -153,6 +153,41 @@
             padding: 15px 0;
             border-top: 3px solid #cc0000;
         }
+
+        /* 當螢幕寬度小於 768px 時（手機模式） */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* 讓側邊欄跟主內容由橫排變成直排 */
+                margin: 10px;
+            }
+        
+            .sidebar {
+                width: auto; /* 寬度自動填滿 */
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+                margin-bottom: 20px;
+            }
+        
+            .main-content {
+                padding: 10px 15px; /* 縮減間距讓內容不那麼擠 */
+            }
+        
+            .header h1 {
+                font-size: 20px; /* 縮小標題字體防止換行太亂 */
+            }
+        
+            .nav-bar {
+                flex-wrap: wrap; /* 導覽列太長時自動換行 */
+            }
+        
+            .nav-item {
+                flex: 1 1 40%; /* 讓選單按鈕兩兩一排 */
+                font-size: 12px;
+                text-align: center;
+                margin: 2px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -215,4 +250,5 @@
 
 </body>
 </html>
+
 
